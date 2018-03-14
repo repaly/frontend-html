@@ -7,7 +7,6 @@ body {
   font-family: arial, sans-serif;
 }
 
-
 /******************** Header *****************/
 
 header {
@@ -24,17 +23,22 @@ header {
 
 aside {
   display: inline-block;
-  float: right;
   margin-top: 4rem;
   vertical-align: top;
+  float: right;
 }
 
 #call-to-action {
+  cursor: pointer;
   color: #f36240;
   font-weight: 300;
   font-size: 1.5rem;
   text-decoration: underline;
   display: inline-block;
+}
+
+#call-to-action:hover {
+  color: #dc401c;
 }
 
 .contact-information {
@@ -43,22 +47,22 @@ aside {
   text-align: right;
 }
 
+/*Часы работы*/
 .contact-information h6 {
-  /*Часы работы*/
   margin: 0;
   font-weight: 300;
   font-size: 1rem;
   color: #484745;
 }
 
+/*Телефон*/
 .contact-information h3 {
-  /*Телефон*/
+
   margin: 0;
   font-weight: 300;
   font-size: 2rem;
   color: #484745;
 }
-
 
 nav ul {
   list-style: none;
@@ -91,6 +95,91 @@ nav ul li a {
   color: inherit;
   text-align: center;
 }
+
+/***************** Main ************/
+
+main {
+  background-color: inherit;
+  margin: 0 auto;
+  width: 60%;
+}
+
+main header {
+  background-color: inherit;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+#main-title {
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #4b4b4b;
+}
+
+#main-description {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #4b4b4b;
+}
+
+/* Боковая панель рекомендаций */
+.aside-suggest {
+  display: inline-block;
+  width: 20%;
+  background-color: #FFFFFF;
+  margin: 0;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  border-radius: 6px;
+  float: left;
+}
+
+.aside-suggest h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #4b4b4b;
+}
+
+.aside-suggest ul {
+  padding: 0;
+  list-style: none;
+}
+
+.aside-suggest ul li {
+  margin: 1em 0;
+}
+
+.aside-suggest ul li a {
+  cursor: pointer;
+  color: #8a8a8a;
+  text-decoration: underline;
+}
+
+.aside-suggest ul li a:hover {
+  color: #dc401c;
+}
+
+
+.main-container-content {
+  display: inline-block;
+  width: 70%;
+  background-color: #FFFFFF;
+  float: right;
+}
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 
 @media (max-width: 1000px) {
 
